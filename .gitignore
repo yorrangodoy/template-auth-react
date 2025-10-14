@@ -17,3 +17,9 @@ dist/
 .vscode/
 *.log
 .vercel
+node_modules/
+dist/
+.vite/
+.vscode/
+*.log
+.vercel
