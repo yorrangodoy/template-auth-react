@@ -1,0 +1,147 @@
+:root {
+  color-scheme: dark;
+  --bg: #0b0f14;
+  --panel: #121820;
+  --text: #dfe6ee;
+  --muted: #9aa8b5;
+  --primary: #5aa9ff;
+  --danger: #ff6b6b;
+  --border: #1f2a37;
+  --focus: #8ab4ff;
+  --shadow: 0 10px 30px rgba(0,0,0,0.35);
+  --radius: 14px;
+  --gap: 16px;
+  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: radial-gradient(1000px 600px at 20% -10%, #101827 0%, #0b0f14 60%);
+  color: var(--text);
+}
+
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: 420px;
+  margin: 6vh auto;
+  padding: 24px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+h1, h2, h3 { margin: 0 0 12px; }
+h1 { font-size: 1.35rem; letter-spacing: 0.2px; }
+p { color: var(--muted); margin: 0 0 12px; }
+
+.form { display: grid; gap: var(--gap); }
+.row { display: grid; gap: 8px; }
+
+label { font-size: 0.9rem; color: var(--muted); }
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  background: #0e141b;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  outline: none;
+}
+input:focus {
+  border-color: var(--focus);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--focus) 30%, transparent);
+}
+
+.error { color: var(--danger); font-size: 0.85rem; }
+
+button {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid color-mix(in oklab, var(--primary) 40%, #ffffff00);
+  background: linear-gradient(180deg, color-mix(in oklab, var(--primary) 12%, transparent), transparent);
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover { filter: brightness(1.1); }
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.header {
+  max-width: 920px;
+  margin: 24px auto 0;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h2 { font-size: 1rem; color: var(--muted); }
+
+.nav { display: flex; gap: 12px; }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #0e141b;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.panel {
+  max-width: 920px;
+  margin: 16px auto;
+  padding: 20px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+/* ===== Acessibilidade: skip link ===== */
+.skip-link{
+  position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;
+}
+.skip-link:focus{
+  left:16px; top:16px; width:auto; height:auto; padding:8px 12px;
+  background:#0e141b; border:1px solid var(--focus); border-radius:8px; z-index:1000;
+}
+
+/* ===== Toggle de senha (se usou PasswordField) ===== */
+.input-wrap{ position:relative; }
+.input-wrap input{ padding-right:88px; }
+.input-wrap .eye{
+  position:absolute; right:8px; top:50%; transform:translateY(-50%);
+  padding:6px 10px; border:1px solid var(--border); background:#0e141b; color:var(--muted);
+  border-radius:8px; font-size:.85rem; cursor:pointer; transition:filter .15s ease;
+}
+.input-wrap .eye:hover{ filter:brightness(1.1); }
+
+/* ===== Medidor de força (se usou o meter) ===== */
+.meter{ margin-top:6px; }
+.meter-bar{
+  --w: 0%;
+  --c: var(--danger);
+  height:8px; border-radius:999px; background:#263241; border:1px solid var(--border);
+  position:relative; overflow:hidden;
+}
+.meter-bar::after{
+  content:''; display:block; height:100%; width:var(--w); background:var(--c);
+  border-radius:999px; transition:width .25s ease;
+}
+.meter-label{ display:block; margin-top:6px; font-size:.8rem; color:var(--muted); }
+
+/* ===== Micro-interações ===== */
+button, .badge{ transition: transform .06s ease, filter .15s ease; }
+button:active{ transform: translateY(1px); }
+input, button{ transition: box-shadow .12s ease, border-color .12s ease; }
+
+}
