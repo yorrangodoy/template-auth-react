@@ -1,6 +1,12 @@
-[![Deploy](https://img.shields.io/badge/Vercel-deployed-000?logo=vercel)](https://SEU-PROJ.vercel.app)
 [![CI](https://github.com/yorrangodoy/vite-react-auth-spa/actions/workflows/ci.yml/badge.svg)](https://github.com/yorrangodoy/vite-react-auth-spa/actions/workflows/ci.yml)
+[![Vercel](https://img.shields.io/badge/Vercel-deployed-000?logo=vercel)](https://demo-login-yorran.vercel.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+##Como Rodar
+Requisitos: Node 20+
+No terminal:
+npm install
+npm run dev
 
 **Demo:** https://demo-login-yorran.vercel.app/login
 
