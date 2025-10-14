@@ -1,12 +1,29 @@
 {
-  "name": "login-spa-vite",
+  "name": "vite-react-auth-spa",
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "description": "SPA de Login/Registro/Dashboard em React 18 + Vite, com rotas protegidas, React Hook Form + Zod e autenticação simulada via localStorage (portfólio).",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yorrangodoy/vite-react-auth-spa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yorrangodoy/vite-react-auth-spa/issues"
+  },
+  "homepage": "https://demo-login-yorran.vercel.app",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --port 4173"
+    "preview": "vite preview --port 4173",
+    "lint": "eslint .",
+    "format": "prettier -w .",
+    "format:check": "prettier -c ."
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -17,11 +34,15 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@eslint/js": "^9.14.0",
     "@vitejs/plugin-react": "^4.3.3",
-    "vite": "^7.1.10"
-  },
-  "engines": {
-    "node": ">=20.0.0",
-    "npm": ">=9.0.0"
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "prettier": "^3.3.3",
+    "vite": "^5.4.20"
   }
 }
