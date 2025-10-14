@@ -1,16 +1,13 @@
-# Login SPA — React 18 + Vite (Simulação)
+Projeto de autenticação front-end (Login/Registro/Dashboard) construído com React 18 + Vite e React Router, validação robusta com React Hook Form + Zod, acessibilidade (labels, role="alert", foco lógico) e UI dark responsiva. Autenticação simulada via localStorage (apenas demonstração) + rotas protegidas. Ideal para avaliar domínio de formulários, roteamento client-side, organização de pastas e boas práticas de UX.
 
-SPA de Login/Registro/Dashboard para **portfólio** (não produção).
-- React 18 + Vite
-- React Router v6 (rotas protegidas simuladas)
-- React Hook Form + Zod (validação)
-- **localStorage** simulando usuários e sessão
-- Acessibilidade (labels, `role="alert"`, foco lógico)
-- UI dark minimalista, responsiva
+Stack atual: React 18, Vite, React Router v6, RHF + Zod.
 
-> ⚠️ **Atenção:** Autenticação **simulada** em `localStorage` (não seguro). Não use em produção.
+Arquitetura clara: components/, pages/, routes/, services/, lib/, styles/.
 
-## Rodar
-```bash
-npm install
-npm run dev
+Validação de mercado: e-mail + senha forte (8+, maiúscula, minúscula, número) e confirmação.
+
+Rotas protegidas com ProtectedRoute e redirecionamento para /login.
+
+UX/A11y: mensagens com role="alert", foco no primeiro erro, skip-link, UI dark responsiva.
+
+Portfólio: serviços de “auth” mockados (localStorage) para demonstrar fluxo completo
