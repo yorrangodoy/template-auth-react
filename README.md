@@ -15,7 +15,7 @@ Arquitetura clara: components/, pages/, routes/, services/, lib/, styles/.
 Rotas protegidas com ProtectedRoute e redirecionamento para /login.
 
 
-![Screenshot](./login.png)
-![Screenshot](./register.png)
+![Tela de Login](./assets/login.png
+![Tela de Registro](./assets/register.png
 
 
