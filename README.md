@@ -9,6 +9,5 @@ Arquitetura clara: components/, pages/, routes/, services/, lib/, styles/.
 
 Rotas protegidas com ProtectedRoute e redirecionamento para /login.
 
-UX/A11y: mensagens com role="alert", foco no primeiro erro, skip-link, UI dark responsiva.
 
 
