@@ -17,8 +17,11 @@ Rotas protegidas com ProtectedRoute e redirecionamento para /login.
 ## Preview
 
 <p>
-  <img src="./assets/login.png" width="49%" alt="Tela de Login">
-  <img src="./assets/register.png" width="49%" alt="Tela de Registro">
+  <a href="https://demo-login-yorran.vercel.app/login" target="_blank">
+    <img src="./assets/login.png" width="49%" alt="Tela de Login">
+  </a>
+  <a href="https://demo-login-yorran.vercel.app/register" target="_blank">
+    <img src="./assets/register.png" width="49%" alt="Tela de Registro">
+  </a>
 </p>
-
 
