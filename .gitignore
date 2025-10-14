@@ -5,3 +5,9 @@ dist
 .DS_Store
 .vite
 *.log
+node_modules/
+dist/
+.vite/
+.vscode/
+*.log
+.vercel
